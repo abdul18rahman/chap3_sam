@@ -33,4 +33,13 @@ page.should have_selector('title',
 :text => "Ruby on Rails Tutorial Sample App | About Us")
 end
 end
+describe "Contact" do
+it "should have h1 'contact'" do
+visit '/staticpages/contact'
+page.should have_selector('title',:text => "Ruby on Rails Tutorial Sample App | contacts")	
 end
+it "should have the title 'contact'" do
+visit '/staticpages/contact'
+page.should have_selector('title',:text => "Ruby on Rails Tutorial Sample App | contacts")	
+end
+end 
