@@ -1,10 +1,19 @@
 SampleApp::Application.routes.draw do
-  get "staticpages/home"
+  get "users/new"
 
-  get "staticpages/help"
+root to: 'staticpages#home'
 
-  get "staticpages/about"
+match '/signup', to: 'users#new'
 
+match '/help', to: 'staticpages#help'
+
+match '/about', to: 'staticpages#about'
+
+match '/contact', to: 'staticpages#contact'
+
+
+# root_path => '/'
+# root_url => 'http://localhost:3000/'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
