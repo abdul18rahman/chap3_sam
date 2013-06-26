@@ -1,19 +1,21 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  
+  resources :users
+  
 
-root to: 'staticpages#home'
+  root to: 'static_pages#home'
 
-match '/signup', to: 'users#new'
+  match '/signup',to: 'users#new'
 
-match '/help', to: 'staticpages#help'
+  
+  match '/help',  to:'static_pages#help'
 
-match '/about', to: 'staticpages#about'
+  
+  match '/about', to:'static_pages#about'
+  
+  match '/contact', to:'static_pages#contact'
 
-match '/contact', to: 'staticpages#contact'
 
-
-# root_path => '/'
-# root_url => 'http://localhost:3000/'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

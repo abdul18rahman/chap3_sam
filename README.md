@@ -1,4 +1,4 @@
-#
-Hi RUBY ON RAILS
-DIFFICULT LANGUAGE
-BY RAH
+Hi! 
+  This is my sample Apllication
+      by
+        Alfred PL
