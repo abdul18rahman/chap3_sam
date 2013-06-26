@@ -10,7 +10,8 @@ match '/help', to: 'staticpages#help'
 match '/about', to: 'staticpages#about'
 
 match '/contact', to: 'staticpages#contact'
-
+ 
+match '/testme', to: 'mycontroller#testme'
 
 # root_path => '/'
 # root_url => 'http://localhost:3000/'
