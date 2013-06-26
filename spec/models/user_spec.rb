@@ -15,8 +15,8 @@ describe User do
 
   #pending "add some examples to (or delete) #{__FILE__}"
  before do
- 	@user=User.new(name: "alfred",email: "user@gmail.com",
- 		password:"alfred123",password_confirmation:"alfred123")
+ 	@user=User.new(name: "abdul", email: "user@gmail.com",
+ 		password:"abdul1234", password_confirmation:"abdul1234")
  end
    	subject { @user }
 
